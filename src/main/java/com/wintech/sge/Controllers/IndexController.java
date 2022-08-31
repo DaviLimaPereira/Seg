@@ -10,7 +10,7 @@ public class IndexController{
     //método para executar a page index
     @GetMapping("/")
     public String index(Model model){
-        model.addAttribute("titulo", "Home - sge");
+        model.addAttribute( "titulo", "S.G.E. - Home");
         return "index";
     }
 }
