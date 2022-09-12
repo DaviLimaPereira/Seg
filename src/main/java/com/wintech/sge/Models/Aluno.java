@@ -1,5 +1,7 @@
 package com.wintech.sge.Models;
 
+import java.sql.Date;
+
 public class Aluno {
 
 	private long idAluno;
