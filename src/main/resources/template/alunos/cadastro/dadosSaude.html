@@ -2,94 +2,86 @@
 
   <body>
     <main>
-      <div class="container-fluid">
-        <h1>Cadastro de Aluno - Passo 3 de 4</h1>
-        <form action="" method="post">
+      <div class="container">
+        <div class="row">
+          <h1>Cadastro de Aluno(a) - Passo 3 de 4</h1>
+        </div>
+        <div class="row">
           <h3>Dados de Saúde</h3>
+        </div>
+      </div>
+      <form action="" method="post">
           <div class="form-row">
-            <div class="form-group">
-              <label for="">Medicamentos e dosagem que a criança costuma tomar quando FEBRE e/ou DOR DE CABEÇA:</label>
-              <input type="text" class="form-control" name="FebreDorDeCabeca" id="">
+            <div class="form-group col">
+              <label class="lead" for="">Qual medicamento e dosagem costuma tomar quando FEBRE e/ou DOR DE CABEÇA?</label>
+              <input class="form-control" type="text" name="" id="">
             </div>
           </div>
-          <fieldset>
-            <legend>Assinalar as doenças infantis que já teve:</legend>
-            <div class="form-row">
-              <div class="form-group col-md-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Sarampo
-                  </label>
-                </div>
-              </div>
-              <div class="form-group col-md-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Catapora
-                  </label>
-                </div>
-              </div>
-              <div class="form-group col-md-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Caxumba
-                  </label>
-                </div>
-              </div>
-              <div class="form-group col-md-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Bronquite
-                  </label>
-                </div>
-              </div>
-              <div class="form-group col-md-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Convulsão
-                  </label>
-                </div>
-              </div>
-              <div class="form-group col-md-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Rubéola
-                  </label>
-                </div>
-              </div>
+
+          <div class="form-row">
+            <div class="form-group lead col">
+              Citar se alergia a
             </div>
-          </fieldset>
-            <div class="form-row">
-              <div class="form-group col">
-                <label for="">Outras:</label>
-                <input type="text" class="form-control" name="" id="">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col">
-                <label for="">Medicações que costuma tomar:</label>
-                <input type="text" class="form-control" name="" id="">
-              </div>
-            </div>
-            <fieldset>
-              <div class="form-row">
-                <div class="form-group col">
-                  <label for="">Nome do contato de emergência:</label>
-                  <select name="" class="form-control" id="">
-                    <option value="">Selecione...</option>
-                  </select>
-                </div>
-              </div>
-            </fieldset>
           </div>
-          <a href="/aluno/cadastro/step-4" class="btn btn-outline-success">Salvar e Próximo</a>
-        </form>
+          <div class="row">
+            <div class="form-group col-md-2">
+              <label for="inputEstado">Penicilina</label>
+            </div>
+            <div class="form-group col">
+              <select id="inputEstado" class="form-control">
+                <option selected>Escolher...</option>
+                <option>Não</option>
+                <option>Sim</option>
+                <option>Nunca Tomou</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="outrosRemedios">Outros:</label>
+            </div>
+            <div class="form-group col">
+              <input class="form-control" type="text" name="" id="outrosRemedios">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col">
+              
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group lead">
+              Citar se já teve as seguintes doenças infantis:
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="form-check-label" for="">Sarampo</label>
+            </div>
+            <div class="form-group col-md-2">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="form-check-label" for="">Catapora</label>
+            </div>
+            <div class="form-group col-md-2">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="form-check-label" for="">Bronquite</label>
+            </div>
+            <div class="form-group col-md-2">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="form-check-label" for="">Caxumba</label>
+            </div>
+            <div class="form-group col-md-2">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="form-check-label" for="">Convulsão</label>
+            </div>
+            <div class="form-group col-md-2">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="form-check-label" for="">Rubéola</label>
+            </div>
+          </div>
+      </form>
+      <div class="">
+        <a href="/aluno/cadastro/step-4" class="btn btn-outline-success">Salvar e Próximo</a>
       </div>
     </main>
   </body>
